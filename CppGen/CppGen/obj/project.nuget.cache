@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4+h0yp2T++H5xjqYC+JH6YMxfd04+v0BLIQF0wMMckDawrtRGo9aaQtXtrYr9VpWooKl94ewzR/N+WF5xOtCkw==",
+  "success": true,
+  "projectFilePath": "/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/CppGen.csproj",
+  "expectedPackageFiles": [
+    "/Users/jacob/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

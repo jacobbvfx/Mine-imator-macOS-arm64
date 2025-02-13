@@ -11,9 +11,6 @@ attribute vec3 in_Tangent;
 varying vec3 vPosition;
 varying vec2 vTexCoord;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -52,7 +49,7 @@ vec3 getWindAngle(vec3 pos)
 
 void main()
 {
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	
 	// Wind
 	if (max((in_Wave.x + in_Wave.y) * uWindTerrain, uWindEnable) * uWindStrength > 0.0)

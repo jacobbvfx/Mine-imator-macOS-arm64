@@ -18,32 +18,29 @@ namespace CppProject
 
 		QBoxLayout* mainLayout = new QVBoxLayout;
 		mainLayout->setSpacing(12);
-
-		mainLayout->addWidget(new QLabel("A fatal error has occurred!"));
-
-		// Error
 		QTextEdit* textArea = new QTextEdit;
 		textArea->setReadOnly(true);
-		textArea->setStyleSheet("font-family: Consolas");
-		textArea->setPlainText(error + "\nVersion: " + mineimator_version_full + "\nOS: " + os_get());
+		textArea->setStyleSheet("font-family: Consolas;");
+		textArea->setPlainText(error + "\nVersion: " + mineimator_version + (mineimator_version_extra.IsEmpty() ? "" : " " + mineimator_version_extra) + " (" + os_get() + ")");
+
+		// Error
+		mainLayout->addWidget(new QLabel("A fatal error has occurred!"));
 		mainLayout->addWidget(textArea);
 
 		// Report
 		QLabel* text1 = new QLabel("Please report the error on the Mine-imator forums along with the log file contents and instructions how to recreate the error message. If the issue occurs with a certain project file, please upload the project folder as well and include a link to it in your topic.");
 		text1->setWordWrap(true);
 		mainLayout->addWidget(text1);
-
+		QLayout* buttonLayout = new QHBoxLayout;
 		QPushButton* button1 = new QPushButton("View log");
 		QPushButton* button2 = new QPushButton("Visit forums");
 		QPushButton* button3 = new QPushButton("Upload project");
-		button1->setFixedHeight(42);
-		button2->setFixedHeight(42);
-		button3->setFixedHeight(42);
+		button1->setFixedHeight(50);
+		button2->setFixedHeight(50);
+		button3->setFixedHeight(50);
 		button1->connect(button1, &QPushButton::released, [&]() { QDesktopServices::openUrl((QString)log_file); });
 		button2->connect(button2, &QPushButton::released, [&]() { QDesktopServices::openUrl((QString)link_forums_bugs); });
 		button3->connect(button3, &QPushButton::released, [&]() { QDesktopServices::openUrl((QString)link_forums_upload); });
-
-		QLayout* buttonLayout = new QHBoxLayout;
 		buttonLayout->addWidget(button1);
 		buttonLayout->addWidget(button2);
 		buttonLayout->addWidget(button3);
@@ -53,21 +50,14 @@ namespace CppProject
 		text2->setWordWrap(true);
 		mainLayout->addWidget(text2);
 
-		// Close
-		QPushButton* button4 = new QPushButton("Restart");
-		QPushButton* button5 = new QPushButton("Abort");
+		// Restart
+		QPushButton* button4 = new QPushButton("Restart"); 
 		button4->connect(button4, &QPushButton::released, [&]() { QDesktopServices::openUrl(QUrl("Mine-imator.exe")); QDialog::close(); });
-		button5->connect(button5, &QPushButton::released, [&]() { QDialog::close(); });
-		button4->setFixedSize(88, 28);
-		button5->setFixedSize(88, 28);
-
-		QLayout* buttonLayout2 = new QHBoxLayout;
-		buttonLayout2->addWidget(button4);
-		buttonLayout2->addWidget(button5);
-		mainLayout->addLayout(buttonLayout2);
-		mainLayout->setAlignment(buttonLayout2, Qt::AlignRight);
-
+		button4->setFixedSize(80, 30);
+		mainLayout->addWidget(button4);
+		mainLayout->setAlignment(button4, Qt::AlignHCenter);
 		QDialog::setLayout(mainLayout);
+
 		QDialog::exec();
 	}
 }

@@ -18,9 +18,6 @@ varying vec4 vColor;
 
 uniform vec4 uBlendColor;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -59,7 +56,7 @@ vec3 getWindAngle(vec3 pos)
 
 void main()
 {
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	
 	// Wind
 	if (max((in_Wave.x + in_Wave.y) * uWindTerrain, uWindEnable) * uWindStrength > 0.0)

@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'Mine-imator' in project 'Mine-imator'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'Mine-imator'
+➜ Explicit dependency on target 'Mine-imator_autogen' in project 'Mine-imator'
+Target 'Mine-imator_autogen' in project 'Mine-imator'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'Mine-imator'
+Target 'ZERO_CHECK' in project 'Mine-imator' (no dependencies)

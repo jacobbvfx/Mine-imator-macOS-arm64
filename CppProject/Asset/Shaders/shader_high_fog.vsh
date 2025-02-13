@@ -15,9 +15,6 @@ varying float vDepth;
 
 uniform vec4 uBlendColor;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -66,7 +63,7 @@ void main()
 		vPosition = (gm_Matrices[MATRIX_WORLD] * vec4(in_Position, 1.0)).xyz;
 	
 	vColor = in_Colour * uBlendColor;
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	
 	vDepth = (gm_Matrices[MATRIX_WORLD_VIEW] * vec4(vPosition, 1.0)).z;
 	

@@ -1,0 +1,17 @@
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/CppGen
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/CppGen.deps.json
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/CppGen.runtimeconfig.json
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/CppGen.dll
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/ref/CppGen.dll
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/CppGen.pdb
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.csproj.AssemblyReference.cache
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.AssemblyInfoInputs.cache
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.AssemblyInfo.cs
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.csproj.CoreCompileInputs.cache
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.csproj.CopyComplete
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.dll
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/ref/CppGen.dll
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.pdb
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppGen/CppGen/obj/Debug/net6.0/CppGen.genruntimeconfig.cache

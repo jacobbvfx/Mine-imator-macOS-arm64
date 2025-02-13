@@ -10,9 +10,6 @@ attribute vec3 in_Tangent;
 
 varying vec2 vTexCoord;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -51,7 +48,7 @@ vec3 getWindAngle(vec3 pos)
 
 void main()
 {
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	
 	vec3 pos = (gm_Matrices[MATRIX_WORLD] * vec4(in_Position + getWind(), 1.0)).xyz;
 	pos += getWindAngle(in_Position);

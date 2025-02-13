@@ -24,9 +24,6 @@ varying vec4 vCustom;
 
 uniform vec4 uBlendColor;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -86,7 +83,7 @@ void main()
 	vTangent = normalize(vTangent - dot(vTangent, vNormal) * vNormal);
 	vTBN = mat3(vTangent, cross(vTangent, vNormal), vNormal);
 	
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	vCustom = in_Wave;
 	
 	vColor = uBlendColor * in_Colour;

@@ -17,9 +17,6 @@ varying float vEmissive;
 uniform vec4 uBlendColor;
 uniform float uDefaultEmissive;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -69,7 +66,7 @@ void main()
 	
 	vDepth = (gm_Matrices[MATRIX_VIEW] * vec4(vPosition, 1.0)).z;
 	vColor = in_Colour * uBlendColor;
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	vEmissive = clamp(in_Wave.z * uDefaultEmissive, 0.0, 1.0);
 	
 	gl_Position = uTAAMatrix * gm_Matrices[MATRIX_PROJECTION] * (gm_Matrices[MATRIX_VIEW] * vec4(vPosition, 1.0));

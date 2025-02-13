@@ -24,9 +24,6 @@ varying vec2 vTexCoord;
 varying vec3 vDiffuse;
 varying vec4 vCustom;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -103,7 +100,7 @@ void main()
 	}
 	
 	vColor = in_Colour * uBlendColor;
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	
 	gl_Position = uTAAMatrix * gm_Matrices[MATRIX_PROJECTION] * (gm_Matrices[MATRIX_VIEW] * vec4(vPosition, 1.0));
 }

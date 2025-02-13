@@ -19,9 +19,6 @@ varying vec4 vColor;
 varying vec2 vTexCoord;
 varying vec4 vCustom;
 
-// Texture
-uniform vec2 uTextureOffset;
-
 // Wind
 uniform float uTime; // static
 uniform float uWindEnable;
@@ -75,7 +72,7 @@ void main()
 	vTBN = mat3(vTangent, cross(vTangent, vNormal), vNormal);
 	
 	vColor = in_Colour;
-	vTexCoord = in_TextureCoord + uTextureOffset;
+	vTexCoord = in_TextureCoord;
 	vCustom = in_Wave;
 	
 	gl_Position = uTAAMatrix * gm_Matrices[MATRIX_PROJECTION] * (gm_Matrices[MATRIX_VIEW] * vec4(vPosition, 1.0));

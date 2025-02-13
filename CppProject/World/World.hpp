@@ -99,7 +99,7 @@ namespace CppProject
 	// Stores color tint of a biome.
 	struct BiomeTint
 	{
-		IntType grass, foliage; //, water; //fix water tint
+		IntType grass, foliage, water;
 	};
 
 	// Determines how a block will be rendered in the preview, compressed into a 8 bit value.
@@ -131,8 +131,8 @@ namespace CppProject
 		{
 			NONE,
 			GRASS,
-			FOLIAGE
-			//WATER //fix water tint
+			FOLIAGE,
+			WATER
 		};
 
 		uint16_t topPos, sidePos;

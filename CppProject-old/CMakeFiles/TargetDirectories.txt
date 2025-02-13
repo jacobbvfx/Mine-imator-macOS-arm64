@@ -1,0 +1,5 @@
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppProject/CMakeFiles/Assets.dir
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppProject/CMakeFiles/Mine-imator.dir
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppProject/CMakeFiles/Mine-imator_autogen.dir
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppProject/CMakeFiles/ALL_BUILD.dir
+/Users/jacob/Documents/Dev/Mine-imator-macOS-arm64/CppProject/CMakeFiles/ZERO_CHECK.dir
